@@ -84,9 +84,9 @@
 
 /* 슬라이드1 */
 .home_slide1_text {
-  width: 40%;
+  width: 40vw;
   padding-top: 200px;
-  padding-left: 500px;
+  padding-left: 400px;
 }
 
 .home_slide1_textBox {
