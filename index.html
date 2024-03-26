@@ -14,8 +14,17 @@
     <link rel="stylesheet" href=".//styles/planer.css" />
     <link rel="stylesheet" href="./styles/them.css" />
     <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="stylesheet" href="./styles/test.css" />
     <script defer src="./js/slide.js"></script>
     <script defer src="./js/home.js"></script>
+    <script defer src="./js/test.js"></script>
+    
+    <!-- IONICONS -->
+    <script
+      src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"
+    ></script>
+    <!-- JS -->
+    <script defer src="./js/test.js"></script>
 
     <style>
       @font-face {
@@ -28,8 +37,8 @@
       }
     </style>
   </head>
-  <body>
-    <div id="wrap">
+  <body id="body-pd">
+    <div class="wrap">
       <header>
         <div class="nav">
           <div class="logo-group">
@@ -56,7 +65,47 @@
             </button>
           </div>
         </div>
+        <div class="l-navbar" id="navbar">
+          <nav class="nav_t">
+            <div>
+              <div class="nav__brand">
+                <ion-icon
+                  name="menu-outline"
+                  class="nav__toggle"
+                  id="nav-toggle"
+                ></ion-icon>
+                <a href="#" class="nav__logo">너 J발 P야?</a>
+              </div>
+              <div class="nav__list">
+                <a href="#" class="nav__link active">
+                  <ion-icon name="home-outline" class="nav__icon"></ion-icon>
+                  <span class="nav_name">홈</span>
+                </a>
+                <a href="#" class="nav__link">
+                  <ion-icon name="chatbubbles-outline" class="nav__icon"></ion-icon>
+                  <span class="nav_name">테마</span>
+                </a>
+    
+                <div href="#" class="nav__link collapse">
+                  <ion-icon name="folder-outline" class="nav__icon"></ion-icon>
+                  <span class="nav_name">플래너</span>
+                </div>
+    
+                <a href="#" class="nav__link">
+                  <ion-icon name="pie-chart-outline" class="nav__icon"></ion-icon>
+                  <span class="nav_name">여행정보</span>
+                </a>
+    
+                <div href="#" class="nav__link collapse">
+                  <ion-icon name="people-outline" class="nav__icon"></ion-icon>
+                  <span class="nav_name">커뮤니티</span>
+                </div>
+            </div>
+          </nav>
+        </div>
+    
       </header>
+
       <!-- 홈 영역 -->
 
       <section id="홈" class="home">
@@ -134,6 +183,7 @@
           </div>
         </div>
       </section>
+
       <!-- 테마 영역 -->
       <section id="테마" class="content">
         <div class="home_container testcont" style="overflow: hidden">
@@ -162,16 +212,17 @@
               </div>
             </div>
             <div class="inner">
-              <img src="./img/테스트이미지2.jpg" alt="" />
+            
             </div>
             <div class="inner">
-              <img src="./img/커뮤니티이미지.jpg" alt="" />
+            
             </div>
           </div>
         </div>
         <button class="them_prevBtn"></button>
         <button class="them_nextBtn"></button>
       </section>
+
       <!-- 여행 플래너 영역-->
 
       <section id="여행플래너" class="content_planner">
@@ -194,6 +245,7 @@
           <div class="tripplanner_img"></div>
         </div>
       </section>
+
       <!-- 여행정보 영역 -->
 
       <section id="여행정보" class="content_info">
@@ -226,6 +278,7 @@
           </div>
         </div>
       </section>
+
       <!-- 커뮤니티 영역 -->
 
       <section id="커뮤니티" class="content_footer">
@@ -254,6 +307,7 @@
           </div>
         </div>
       </section>
+
       <!-- footer 영역 -->
 
       <footer>
