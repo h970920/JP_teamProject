@@ -36,11 +36,19 @@
 #### 커뮤니티/푸터 섹션
 ![커뮤니티/푸터 섹션](https://github.com/h970920/JP_teamProject/assets/147658859/b9169ac5-bce1-439f-94e1-27343419a5af)
 
+### 테마 페이지
+![테마목업](https://github.com/h970920/JP_teamProject/assets/147658859/19dde53e-24a7-47ac-b2c6-8d62b9e59f2b)
+
+### 여행정보 페이지
+![스크린샷 2024-03-28 202718](https://github.com/h970920/JP_teamProject/assets/147658859/4dd748d2-1a4e-439f-8824-5eeea1e69a49)
+
 ### 회원가입 폼
 ![회원가입 폼](https://github.com/h970920/JP_teamProject/assets/147658859/c865eb59-241a-486c-bfe9-573c6e84b0cb)
 
 ### 로그인 폼
 ![로그인 폼](https://github.com/h970920/JP_teamProject/assets/147658859/cd352af7-d362-497f-9d11-dda58aa310a4)
+
+
 
 ## 추가 기능 및 개선 사항
 - 아이콘 및 이모티콘 추가하여 화면을 더 생동감 있게 만들기
