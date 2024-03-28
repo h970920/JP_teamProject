@@ -1,71 +1,111 @@
 body {
-  background-image: url(/img/planer_bg.png);
+  background-image: url(/img/themPage01.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   overflow-y: hidden;
 }
 section {
-  width: 100%;
+  width: 100vw;
+  text-align: left;
   height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
+/*테마 메인박스 */
 .them_main {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  align-items: center;
-  justify-content: center;
+  margin-top: 100px;
 }
 
-.them_title {
+/*테마 슬라이드*/
+.slide_container {
+  width: 200vw;
+  height: 600px;
+  margin-top: 100px;
+  display: flex;
+}
+
+.them_button_container_dec {
+  width: 800px;
+  border: 2px solid white;
+}
+
+/*테마 슬라이드영역 메인타이틀 */
+.slide_title {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 30px;
-}
-
-.them_title > h1 {
-  font-size: 88px;
-  color: #c8e6c9;
-}
-
-.them_title > p {
-  font-size: 48px;
-  color: white;
-}
-
-.them_subtitle {
-  font-size: 62px;
-  color: white;
+  text-align: left;
+  width: 500px;
+  height: 450px;
   padding: 50px;
-  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  margin-top: 50px;
+  margin-left: 100px;
+  border-radius: 20px;
 }
 
-.them_subtitle_span1 {
-  color: #66bb69;
+.slide_title > h1 {
+  margin-bottom: 45px;
+  font-size: 84px;
+  margin-top: 150px;
+}
+.slide_title > p {
+  font-size: 40px;
 }
 
-.them_subtitle_span2 {
-  color: #66bb69;
-}
-
-.them_button {
+/*테마슬라이드영역 아이템들 */
+.slide_item_container {
   display: flex;
+  width: 200vw;
+  height: 500px;
+  margin-left: 100px;
+  margin-top: 100px;
+  align-items: flex-end;
+}
+
+.slide_them_item {
   width: 400px;
-  background-color: #28cb8b;
-  height: 2px;
-  border-radius: 30px;
-  padding: 50px;
-  text-align: center;
+  height: 400px;
+  margin-right: 50px;
+}
+.slide_them_item > img {
+  width: 100%;
+}
+
+/* 버튼 디자인 */
+
+.them_button_container {
+  display: flex;
+  width: 100vw;
+  height: 200px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.btn_container {
+  display: flex;
+  width: 300px;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 150px;
+}
+.btncircle {
+  display: flex;
   align-items: center;
   justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+/*버튼 화살표 디자인 */
+
+.btncircle > i {
   color: white;
-  font-size: 40px;
-  border: none;
-  font-weight: bold;
-  margin-bottom: 100px;
-  margin-top: 50px;
+  font-size: 52px;
+  cursor: pointer;
 }
