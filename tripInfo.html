@@ -15,6 +15,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   /> 
+  <script defer src="./js/infoBoard.js"></script>
 
     <!-- IONICONS -->
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
@@ -29,7 +30,6 @@
         font-family: "MaplestoryBold";
         src: url("./font/Maplestory\ Bold.ttf") format("truetype");
       }
-
       body {
         font-family: "MaplestoryBold", sans-serif;
       }
@@ -137,7 +137,7 @@
                     <p class="hashtag_title_text">#축제</p></div>
                 <div class="hashtag_circle1">
                     <img src="./img/infoimg08.png" alt="">
-                    <p class="hashtag_title_text">#전시</p></div>
+                    <p class="hashtag_title_text">#전시</p></div> 
                 <div class="hashtag_circle1">
                     <img src="./img/infoimg09.png" alt="">
                     <p class="hashtag_title_text">#야경</p></div>
@@ -150,7 +150,7 @@
           <section id="info_board">
             <div id="board_container">
                 <div class="board_header">
-                    <div class="board_category">카페</div>
+                    <div class="board_category">#카페</div>
                     <div class="dropdown">
                         <button onclick="toggleDropdown()" class="dropbtn">별점순 <i class="fas fa-caret-down dropdown_icon"></i></button>
                         <div id="myDropdown" class="dropdown-content">
@@ -159,9 +159,10 @@
                           <a href="#" onclick="sortBy('조회순')">조회순 <i class="fas fa-caret-down dropdown_icon"></i></a>
                         </div>
                       </div>
-                      
+                
                 </div>
-                    <div class="board_list">
+                <!-- 카페 관련 게시물 -->
+                    <div class="board_list" id="cafe_board">
                       <!-- 첫번째 게시물-->
                       <div class="board_container">
                       <div class="board_item">
@@ -268,6 +269,40 @@
                         <div class="add_review"><a href="#">후기 등록</a></div>
                     </div>
                   </div>
+                   <!-- 카페 관련 게시물 -->
+                
+                </div>
+                <div class="board_list" id="restaurant_board" style="display: none;">
+                  <!-- 맛집 관련 게시물 -->
+                  <h1>맛집 관련 게시물입니다</h1>
+                </div>
+                <div class="board_list" id="exp_board" style="display: none;">
+                  <!-- 체험 관련 게시물 -->
+                  <h1>체험 관련 게시물입니다</h1>
+                </div>
+                <div class="board_list" id="park_board" style="display: none;">
+                  <!-- 공원 관련 게시물 -->
+                  <h1>공원 관련 게시물입니다</h1>
+                </div>
+                <div class="board_list" id="them_board" style="display: none;">
+                  <!-- 테마 관련 게시물 -->
+                  <h1>테마 관련 게시물입니다</h1>
+                </div>
+                <div class="board_list" id="make_board" style="display: none;">
+                  <!-- 공방 관련 게시물 -->
+                  <h1>공방 관련 게시물입니다</h1>
+                </div>
+                <div class="board_list" id="fest_board" style="display: none;">
+                  <!-- 축제 관련 게시물 -->
+                  <h1>축제 관련 게시물입니다</h1>
+                </div>
+                <div class="board_list" id="show_board" style="display: none;">
+                  <!-- 전시 관련 게시물 -->
+                  <h1>전시 관련 게시물입니다</h1>
+                </div>
+                <div class="board_list" id="night_board" style="display: none;">
+                  <!-- 야경 관련 게시물 -->
+                  <h1>야경 관련 게시물입니다</h1>
                 </div>
             </div>
           </section>
