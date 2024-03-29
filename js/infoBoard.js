@@ -34,128 +34,147 @@ function changeBoardCategory(event) {
     }
 }
 
+// JavaScript
 // 카페 게시물 목록 표시
 function showCafeBoard() {
-    document.getElementById('cafe_board').style.display = 'block';
-    // 다른 게시물 숨기기
-    document.getElementById('restaurant_board').style.display = 'none';
-    document.getElementById('exp_board').style.display = 'none';
-    document.getElementById('park_board').style.display = 'none';
-    document.getElementById('them_board').style.display = 'none';
-    document.getElementById('make_board').style.display = 'none';
-    document.getElementById('fest_board').style.display = 'none';
-    document.getElementById('show_board').style.display = 'none';
-    document.getElementById('night_board').style.display = 'none';
+    const cafeBoard = document.getElementById('cafe_board');
+    if (cafeBoard) {
+        cafeBoard.style.display = 'block';
+        cafeBoard.classList.add('fade-in'); // 애니메이션 클래스 추가
+    }
+    // 나머지 게시물 숨기기
+    const boards = document.querySelectorAll('.board_list');
+    boards.forEach(function (board) {
+        if (board.id !== 'cafe_board') {
+            board.style.display = 'none';
+        }
+    });
 }
 
 // 맛집 게시물 목록 표시
 function showRestaurantBoard() {
-    document.getElementById('restaurant_board').style.display = 'block';
-    // 다른 게시물 숨기기
-    document.getElementById('cafe_board').style.display = 'none';
-    document.getElementById('exp_board').style.display = 'none';
-    document.getElementById('park_board').style.display = 'none';
-    document.getElementById('them_board').style.display = 'none';
-    document.getElementById('make_board').style.display = 'none';
-    document.getElementById('fest_board').style.display = 'none';
-    document.getElementById('show_board').style.display = 'none';
-    document.getElementById('night_board').style.display = 'none';
+    const restaurantBoard = document.getElementById('restaurant_board');
+    if (restaurantBoard) {
+        restaurantBoard.style.display = 'block';
+        restaurantBoard.classList.add('fade-in'); // 애니메이션 클래스 추가
+    }
+    // 나머지 게시물 숨기기
+    const boards = document.querySelectorAll('.board_list');
+    boards.forEach(function (board) {
+        if (board.id !== 'restaurant_board') {
+            board.style.display = 'none';
+        }
+    });
 }
 
 // 체험 게시물 목록 표시
 function showExpBoard() {
-    document.getElementById('exp_board').style.display = 'block';
-    // 다른 게시물 목록 숨기기
-    document.getElementById('cafe_board').style.display = 'none';
-    document.getElementById('restaurant_board').style.display = 'none';
-    document.getElementById('park_board').style.display = 'none';
-    document.getElementById('them_board').style.display = 'none';
-    document.getElementById('make_board').style.display = 'none';
-    document.getElementById('fest_board').style.display = 'none';
-    document.getElementById('show_board').style.display = 'none';
-    document.getElementById('night_board').style.display = 'none';
+    const expBoard = document.getElementById('exp_board');
+    if (expBoard) {
+        expBoard.style.display = 'block';
+        expBoard.classList.add('fade-in'); // 애니메이션 클래스 추가
+    }
+    // 나머지 게시물 숨기기
+    const boards = document.querySelectorAll('.board_list');
+    boards.forEach(function (board) {
+        if (board.id !== 'exp_board') {
+            board.style.display = 'none';
+        }
+    });
 }
 
 // 공원 게시물 목록 표시
 function showParkBoard() {
-    document.getElementById('park_board').style.display = 'block';
-    // 다른 게시물 목록 숨기기
-    document.getElementById('cafe_board').style.display = 'none';
-    document.getElementById('restaurant_board').style.display = 'none';
-    document.getElementById('exp_board').style.display = 'none';
-    document.getElementById('them_board').style.display = 'none';
-    document.getElementById('make_board').style.display = 'none';
-    document.getElementById('fest_board').style.display = 'none';
-    document.getElementById('show_board').style.display = 'none';
-    document.getElementById('night_board').style.display = 'none';
+    const parkBoard = document.getElementById('park_board');
+    if (parkBoard) {
+        parkBoard.style.display = 'block';
+        parkBoard.classList.add('fade-in'); // 애니메이션 클래스 추가
+    }
+    // 나머지 게시물 숨기기
+    const boards = document.querySelectorAll('.board_list');
+    boards.forEach(function (board) {
+        if (board.id !== 'park_board') {
+            board.style.display = 'none';
+        }
+    });
 }
 
 // 테마 게시물 목록 표시
 function showThemBoard() {
-    document.getElementById('them_board').style.display = 'block';
-    // 다른 게시물 목록 숨기기
-    document.getElementById('cafe_board').style.display = 'none';
-    document.getElementById('restaurant_board').style.display = 'none';
-    document.getElementById('exp_board').style.display = 'none';
-    document.getElementById('park_board').style.display = 'none';
-    document.getElementById('make_board').style.display = 'none';
-    document.getElementById('fest_board').style.display = 'none';
-    document.getElementById('show_board').style.display = 'none';
-    document.getElementById('night_board').style.display = 'none';
+    const themBoard = document.getElementById('them_board');
+    if (themBoard) {
+        themBoard.style.display = 'block';
+        themBoard.classList.add('fade-in'); // 애니메이션 클래스 추가
+    }
+    // 나머지 게시물 숨기기
+    const boards = document.querySelectorAll('.board_list');
+    boards.forEach(function (board) {
+        if (board.id !== 'them_board') {
+            board.style.display = 'none';
+        }
+    });
 }
 
 // 공방 게시물 목록 표시
 function showMakeBoard() {
-    document.getElementById('make_board').style.display = 'block';
-    // 다른 게시물 목록 숨기기
-    document.getElementById('cafe_board').style.display = 'none';
-    document.getElementById('restaurant_board').style.display = 'none';
-    document.getElementById('exp_board').style.display = 'none';
-    document.getElementById('park_board').style.display = 'none';
-    document.getElementById('them_board').style.display = 'none';
-    document.getElementById('fest_board').style.display = 'none';
-    document.getElementById('show_board').style.display = 'none';
-    document.getElementById('night_board').style.display = 'none';
+    const makeBoard = document.getElementById('make_board');
+    if (makeBoard) {
+        makeBoard.style.display = 'block';
+        makeBoard.classList.add('fade-in'); // 애니메이션 클래스 추가
+    }
+    // 나머지 게시물 숨기기
+    const boards = document.querySelectorAll('.board_list');
+    boards.forEach(function (board) {
+        if (board.id !== 'make_board') {
+            board.style.display = 'none';
+        }
+    });
 }
 
 // 축제 게시물 목록 표시
 function showFestBoard() {
-    document.getElementById('fest_board').style.display = 'block';
-    // 다른 게시물 목록 숨기기
-    document.getElementById('cafe_board').style.display = 'none';
-    document.getElementById('restaurant_board').style.display = 'none';
-    document.getElementById('exp_board').style.display = 'none';
-    document.getElementById('park_board').style.display = 'none';
-    document.getElementById('them_board').style.display = 'none';
-    document.getElementById('make_board').style.display = 'none';
-    document.getElementById('show_board').style.display = 'none';
-    document.getElementById('night_board').style.display = 'none';
+    const festBoard = document.getElementById('fest_board');
+    if (festBoard) {
+        festBoard.style.display = 'block';
+        festBoard.classList.add('fade-in'); // 애니메이션 클래스 추가
+    }
+    // 나머지 게시물 숨기기
+    const boards = document.querySelectorAll('.board_list');
+    boards.forEach(function (board) {
+        if (board.id !== 'fest_board') {
+            board.style.display = 'none';
+        }
+    });
 }
 
 // 전시 게시물 목록 표시
 function showShowBoard() {
-    document.getElementById('show_board').style.display = 'block';
-    // 다른 게시물 목록 숨기기
-    document.getElementById('cafe_board').style.display = 'none';
-    document.getElementById('restaurant_board').style.display = 'none';
-    document.getElementById('exp_board').style.display = 'none';
-    document.getElementById('park_board').style.display = 'none';
-    document.getElementById('them_board').style.display = 'none';
-    document.getElementById('make_board').style.display = 'none';
-    document.getElementById('fest_board').style.display = 'none';
-    document.getElementById('night_board').style.display = 'none';
+    const showBoard = document.getElementById('show_board');
+    if (showBoard) {
+        showBoard.style.display = 'block';
+        showBoard.classList.add('fade-in'); // 애니메이션 클래스 추가
+    }
+    // 나머지 게시물 숨기기
+    const boards = document.querySelectorAll('.board_list');
+    boards.forEach(function (board) {
+        if (board.id !== 'show_board') {
+            board.style.display = 'none';
+        }
+    });
 }
 
 // 야경 게시물 목록 표시
 function showNightBoard() {
-    document.getElementById('night_board').style.display = 'block';
-    // 다른 게시물 목록 숨기기
-    document.getElementById('cafe_board').style.display = 'none';
-    document.getElementById('restaurant_board').style.display = 'none';
-    document.getElementById('exp_board').style.display = 'none';
-    document.getElementById('park_board').style.display = 'none';
-    document.getElementById('them_board').style.display = 'none';
-    document.getElementById('make_board').style.display = 'none';
-    document.getElementById('fest_board').style.display = 'none';
-    document.getElementById('show_board').style.display = 'none';
+    const nightBoard = document.getElementById('night_board');
+    if (nightBoard) {
+        nightBoard.style.display = 'block';
+        nightBoard.classList.add('fade-in'); // 애니메이션 클래스 추가
+    }
+    // 나머지 게시물 숨기기
+    const boards = document.querySelectorAll('.board_list');
+    boards.forEach(function (board) {
+        if (board.id !== 'night_board') {
+            board.style.display = 'none';
+        }
+    });
 }

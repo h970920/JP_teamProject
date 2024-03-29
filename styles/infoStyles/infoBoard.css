@@ -101,7 +101,9 @@
 }
 
 .board_item > img {
-    width: 85%;
+    width: 364px;
+    height: 364px;
+    border-radius: 10px;
 }
 
 .board_info {
@@ -226,8 +228,17 @@
     background-color: #e8f5e9;
 }
 
-/*숨기기 구현 */
+/* CSS 게시물 목록 애니메이션 */
 
-.hidden {
-    display: none;
+.fade-in {
+    animation: fadeInAnimation 0.7s ease-in-out forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
